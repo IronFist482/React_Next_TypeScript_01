@@ -1,0 +1,240 @@
+/*contenedor de la pagina*/
+.mainBosque{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  background-image: url("/assets/fondoBosque.jpg");
+  background-size: cover;
+
+}
+.mainMiles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  background-image: url("/assets/spidermanMilesMorales.jpeg");
+  background-size: cover;
+
+}
+.sectionExtra{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  background-color: #00000085;
+  padding: 2rem;
+}
+
+/*css header*/
+.headerMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  background-color: #0000009f;
+  padding: 1.2rem;
+}
+.containerTitleMain{
+  display: flex;
+  flex-direction: row;
+}
+.titleMain{
+  font-size: 3rem;
+  font-weight: 800;
+  color: #6293aa;
+  text-align: center;
+  display: flex;
+  font-style: italic;
+  letter-spacing: 2rem;
+  
+}
+.titleMainWhite{
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  font-style: italic;
+  letter-spacing: 2rem;
+}
+
+.containerSection{
+  display: flex;
+  padding: 2rem;
+  flex-direction: row;
+  align-items: center;
+  transition: 1s;
+}
+/*css section*/
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #25272bb9;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem;
+  max-width: 30%;
+  box-shadow: 1rem 1rem 1rem #000;
+  transition: 1s;
+}
+/*Un hover para .section que cuando pasen el mouse por encima gire sobre el eje y tardando 1 segundo y mostrando un texto diferente*/
+.card:hover{
+  background-color: #25272b;
+  transition: 1s;
+  
+}
+.containerCardImage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #25272b;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem;
+  max-width: 40%;
+  box-shadow: 1rem 1rem 1rem #000;
+  transition: 1s;
+}
+.divTitleSection{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.tituloFuncion{
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  font-style: italic;
+
+}
+.tituloClass{
+  font-size: 1.4rem;
+  margin: 2rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  display: flex;
+}
+
+.description{
+  font-size: 1rem;
+  margin: 1rem;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  letter-spacing: .05rem;
+}
+.headerDivider{
+  width: 100%;
+  background-color: #1c1d1f;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .content {
+    padding: 4rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .card {
+    padding: 1rem 2.5rem;
+  }
+
+  .card h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .center {
+    padding: 8rem 0 6rem;
+  }
+
+  .center::before {
+    transform: none;
+    height: 300px;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .description a {
+    padding: 1rem;
+  }
+
+  .description p,
+  .description div {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+  }
+
+  .description p {
+    align-items: center;
+    inset: 0 0 auto;
+    padding: 2rem 1rem 1.4rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
+    background: linear-gradient(
+      to bottom,
+      rgba(var(--background-start-rgb), 1),
+      rgba(var(--callout-rgb), 0.5)
+    );
+    background-clip: padding-box;
+    backdrop-filter: blur(24px);
+  }
+
+  .description div {
+    align-items: flex-end;
+    pointer-events: none;
+    inset: auto 0 0;
+    padding: 2rem;
+    height: 200px;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgb(var(--background-end-rgb)) 40%
+    );
+    z-index: 1;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .vercelLogo {
+    filter: invert(1);
+  }
+
+  .logo {
+    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+}
